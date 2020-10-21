@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Shop">
+
+    <View
+        android:id="@+id/backdrop_shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#b81a1a"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/banner_border"
+        android:layout_width="336dp"
+        android:layout_height="480dp"
+        android:layout_marginBottom="8dp"
+        android:background="#ffca38"
+        app:layout_constraintBottom_toBottomOf="@+id/backdrop_shop"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.732" />
+
+    <Button
+        android:id="@+id/shop1"
+        android:layout_width="110dp"
+        android:layout_height="65dp"
+        android:background="#FFFFD0"
+        android:text="$3"
+        android:textColor="#33239F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.475" />
+
+    <Button
+        android:id="@+id/shop2"
+        android:layout_width="110dp"
+        android:layout_height="65dp"
+        android:background="#FFFFD0"
+        android:text="$10"
+        android:textColor="#33239F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.474" />
+
+    <Button
+        android:id="@+id/shop3"
+        android:layout_width="110dp"
+        android:layout_height="65dp"
+        android:background="#FFFFD0"
+        android:text="$20"
+        android:textColor="#33239F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.873"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.472" />
+
+    <Button
+        android:id="@+id/shop4"
+        android:layout_width="110dp"
+        android:layout_height="65dp"
+        android:background="#FFFFD0"
+        android:text="$45"
+        android:textColor="#33239F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.845" />
+
+    <Button
+        android:id="@+id/shop5"
+        android:layout_width="110dp"
+        android:layout_height="65dp"
+        android:background="#FFFFD0"
+        android:text="$70"
+        android:textColor="#33239F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.845" />
+
+    <Button
+        android:id="@+id/shop6"
+        android:layout_width="110dp"
+        android:layout_height="65dp"
+        android:background="#FFFFD0"
+        android:text="$100"
+        android:textColor="#33239F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.873"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.845" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="110dp"
+        android:layout_height="65dp"
+        android:background="#ff6d38"
+        android:gravity="center"
+        android:text="1 Crystal"
+        android:textColor="#33239F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.375" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="110dp"
+        android:layout_height="65dp"
+        android:background="#ff6d38"
+        android:gravity="center"
+        android:text="3 Crystals"
+        android:textColor="#33239F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.375" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="110dp"
+        android:layout_height="65dp"
+        android:background="#ff6d38"
+        android:gravity="center"
+        android:text="7 Crystals"
+        android:textColor="#33239F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.873"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.375" />
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="110dp"
+        android:layout_height="65dp"
+        android:background="#ff6d38"
+        android:gravity="center"
+        android:text="15 Crystals"
+        android:textColor="#33239F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.747" />
+
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="110dp"
+        android:layout_height="65dp"
+        android:background="#ff6d38"
+        android:gravity="center"
+        android:text="25 Crystals"
+        android:textColor="#33239F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.747" />
+
+    <TextView
+        android:id="@+id/text6"
+        android:layout_width="110dp"
+        android:layout_height="65dp"
+        android:background="#ff6d38"
+        android:gravity="center"
+        android:text="40 Crystals"
+        android:textColor="#33239F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.873"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.747" />
+    <TextView
+        android:id="@+id/crystalDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="77dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="48dp"
+        android:text="Crystals:"
+        android:textColor="#5ea7ff"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/banner_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.312"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/numCrystals"
+        android:layout_width="148dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="0"
+        android:textColor="#5ea7ff"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/crystalDisplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.028"
+        app:layout_constraintStart_toEndOf="@+id/crystalDisplay"
+        app:layout_constraintTop_toTopOf="@+id/backdrop"
+        app:layout_constraintVertical_bias="1.0" />
+    <Button
+        android:id="@+id/toSummon"
+        android:layout_width="78dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="292dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="44dp"
+        android:background="#1e00ff"
+        android:text="Summon"
+        android:textColor="#ffdd00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/banner_border"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

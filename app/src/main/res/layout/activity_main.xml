@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/backdrop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#deffd4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+    <View
+        android:id="@+id/banner_border"
+        android:layout_width="336dp"
+        android:layout_height="480dp"
+        android:layout_marginBottom="8dp"
+        android:background="#bafff7"
+        app:layout_constraintBottom_toBottomOf="@+id/backdrop"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.732" />
+
+    <ImageView
+        android:id="@+id/banner_image"
+        android:layout_width="336dp"
+        android:layout_height="480dp"
+        android:src="@drawable/banner_image"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@id/banner_border"
+        app:layout_constraintRight_toRightOf="@id/banner_border"
+        app:layout_constraintTop_toTopOf="@id/banner_border"
+        app:layout_constraintBottom_toTopOf="@id/multiSummon"/>
+
+    <Button
+        android:id="@+id/multiSummon"
+        android:layout_width="110dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="56dp"
+        android:background="#FFFFD0"
+        android:text="@string/_10x_summon"
+        android:textColor="#33239F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.962"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numCrystals"
+        app:layout_constraintVertical_bias="0.766" />
+
+    <Button
+        android:id="@+id/singleSummon"
+        android:layout_width="110dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="8dp"
+        android:background="#FFFFD0"
+        android:text="@string/_1x_summon"
+        android:textColor="#33239F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/crystalDisplay"
+        app:layout_constraintVertical_bias="0.766" />
+
+    <TextView
+        android:id="@+id/crystalDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="77dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="48dp"
+        android:text="Crystals:"
+        android:textColor="#5ea7ff"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/banner_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.312"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/numCrystals"
+        android:layout_width="146dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="0"
+        android:textColor="#5ea7ff"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/crystalDisplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.028"
+        app:layout_constraintStart_toEndOf="@+id/crystalDisplay"
+        app:layout_constraintTop_toTopOf="@+id/backdrop"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/toShop"
+        android:layout_width="78dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="292dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="44dp"
+        android:background="#1e00ff"
+        android:text="Shop"
+        android:textColor="#ffdd00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/banner_border"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="78dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#1e00ff"
+        android:text="Reset"
+        android:textColor="#ffdd00"
+        app:layout_constraintBottom_toBottomOf="@+id/backdrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/banner_border"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/characters"
+        android:layout_width="95dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#1e00ff"
+        android:text="Characters"
+        android:textColor="#ffdd00"
+        app:layout_constraintBottom_toBottomOf="@+id/backdrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/banner_border"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/pity"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#1e00ff"
+        android:text="Summon Info"
+        android:textColor="#ffdd00"
+        app:layout_constraintBottom_toBottomOf="@+id/banner_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/banner_border"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Lab06</string>
+    <string name="_1x_summon">1x Summon</string>
+    <string name="_10x_summon">10x Summon</string>
+</resources>
